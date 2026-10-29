@@ -5,10 +5,14 @@ namespace Agencia
 {
     public class Agencia
     {
-        public string Nombre {get; set;}
-        private List<Vehiculo> Vehiculos {get; private set;}
-        private List<Cliente> Clientes {get; private set;}
-        private List<Alquiler> Alquileres {get; private set;}
+        private string _nombre;
+        private List<Vehiculo> _vehiculos; 
+        private List<Cliente> _clientes; 
+        private List<Alquiler> _alquileres;
+        public string Nombre {get;}
+        public List<Vehiculo> Vehiculos{get;} 
+        public List<Cliente> Clientes{get;}
+        public List<Alquiler> Alquileres{get;}
 
         public Agencia(string nombre)
         {

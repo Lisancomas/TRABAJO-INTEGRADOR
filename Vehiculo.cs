@@ -5,11 +5,18 @@ namespace Agencia
     public abstract class Vehiculo
     {
         private string _patente{get;}
-        private string _marca{get; set;}
-        private string _modelo{get; set;}
-        private int _anio{set;}
-        private double _precioxdia{get; set;}
-        private bool _disponible{get; set;}
+        private string _marca{get;}
+        private string _modelo{get;}
+        private int _anio{get;}
+        private double _precioxdia{get;}
+        private bool _disponible{get;}
+        public string Patente {get; set;}
+        public string Marca{get; set;}
+        public string Modelo{get; set;}
+        public int Anio{get; set;}
+        public double Precioxdia{get; set;}
+        public bool Disponible{get; set;}
+
 
         public Vehiculo(string patente, string marca, string modelo, int anio, double preciodia, bool disponible)
         {
@@ -20,30 +27,5 @@ namespace Agencia
             _precioxdia = preciodia;
             _disponible = disponible;
         }
-
-        public abstract double CalcularCostoAlquiler(int dias)
-        {
-            double preciototal = 0;
-            if(dias != 0 && dias != null)
-            {
-                preciototal = _precioxdia * dias;
-            }
-
-            return preciototal;
-            
-        }
-    }
-
-    public class Auto : Vehiculo
-    {
-        private int _puertas {get; 
-        set{if(value != 0)
-                {
-                    _puertas = value;
-                }
-            }
-        }
-        private bool _cajaAutomatica{get; set;}
-
     }
 }
