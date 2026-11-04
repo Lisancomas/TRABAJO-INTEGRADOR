@@ -1,0 +1,29 @@
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\bin\Debug\net10.0\TRABAJO INTEGRADOR.exe
+C:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\bin\Debug\net10.0\TRABAJO INTEGRADOR.deps.json
+C:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\bin\Debug\net10.0\TRABAJO INTEGRADOR.runtimeconfig.json
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\bin\Debug\net10.0\TRABAJO INTEGRADOR.dll
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\bin\Debug\net10.0\TRABAJO INTEGRADOR.pdb
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\TRABAJO INTEGRADOR.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\TRABAJO INTEGRADOR.AssemblyInfoInputs.cache
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\TRABAJO INTEGRADOR.AssemblyInfo.cs
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\TRABAJO INTEGRADOR.csproj.CoreCompileInputs.cache
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\TRABAJO INTEGRADOR.sourcelink.json
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\TRABAJO INTEGRADOR.dll
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\refint\TRABAJO INTEGRADOR.dll
+c:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\TRABAJO INTEGRADOR.pdb
+C:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\TRABAJO INTEGRADOR.genruntimeconfig.cache
+C:\Users\tito\Documents\proyectos c#\TRABAJO-INTEGRADOR\obj\Debug\net10.0\ref\TRABAJO INTEGRADOR.dll
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\bin\Debug\net10.0\TRABAJO INTEGRADOR.exe
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\bin\Debug\net10.0\TRABAJO INTEGRADOR.deps.json
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\bin\Debug\net10.0\TRABAJO INTEGRADOR.runtimeconfig.json
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\bin\Debug\net10.0\TRABAJO INTEGRADOR.dll
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\bin\Debug\net10.0\TRABAJO INTEGRADOR.pdb
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\TRABAJO INTEGRADOR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\TRABAJO INTEGRADOR.AssemblyInfoInputs.cache
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\TRABAJO INTEGRADOR.AssemblyInfo.cs
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\TRABAJO INTEGRADOR.csproj.CoreCompileInputs.cache
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\TRABAJO INTEGRADOR.dll
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\refint\TRABAJO INTEGRADOR.dll
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\TRABAJO INTEGRADOR.pdb
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\TRABAJO INTEGRADOR.genruntimeconfig.cache
+C:\Users\lisan\Downloads\TRABAJO-INTEGRADOR-main1\TRABAJO-INTEGRADOR-main\obj\Debug\net10.0\ref\TRABAJO INTEGRADOR.dll
