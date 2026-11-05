@@ -37,6 +37,7 @@ namespace Agencia
                return false;
 
             }
+            //el exist recorre la lista de vehiculos por el patente. Si no existe, se agregara el vehiculo
         }//FIN DEL METODO
 
          public bool EliminarVehiculo(string patente) 
@@ -53,6 +54,7 @@ namespace Agencia
             {
                 return false;
             }
+          
         }
         public void ListadoVehiculo()
         {

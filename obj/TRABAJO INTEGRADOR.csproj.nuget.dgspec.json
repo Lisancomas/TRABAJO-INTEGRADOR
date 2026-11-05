@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lisan\\Downloads\\TRABAJO-INTEGRADOR-main1\\TRABAJO-INTEGRADOR-main\\TRABAJO INTEGRADOR.csproj": {}
+    "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO INTEGRADOR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lisan\\Downloads\\TRABAJO-INTEGRADOR-main1\\TRABAJO-INTEGRADOR-main\\TRABAJO INTEGRADOR.csproj": {
+    "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO INTEGRADOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lisan\\Downloads\\TRABAJO-INTEGRADOR-main1\\TRABAJO-INTEGRADOR-main\\TRABAJO INTEGRADOR.csproj",
+        "projectUniqueName": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO INTEGRADOR.csproj",
         "projectName": "TRABAJO INTEGRADOR",
-        "projectPath": "C:\\Users\\lisan\\Downloads\\TRABAJO-INTEGRADOR-main1\\TRABAJO-INTEGRADOR-main\\TRABAJO INTEGRADOR.csproj",
-        "packagesPath": "C:\\Users\\lisan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lisan\\Downloads\\TRABAJO-INTEGRADOR-main1\\TRABAJO-INTEGRADOR-main\\obj\\",
+        "projectPath": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO INTEGRADOR.csproj",
+        "packagesPath": "C:\\Users\\tito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lisan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tito\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

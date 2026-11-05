@@ -29,40 +29,31 @@ namespace Agencia
                    Console.Write(" >> Ingrese su eleccion: ");
             }
          
-     
+       try{
           switch(eleccion)
           {
             case 1: 
             Console.Clear();
-            try{
             if(AgregarVehiculo(MiAgencia)) Console.WriteLine("  >> Vehiculo registrado con exito ");
-            else Console.WriteLine("  >> Error: El vehículo ya se encuentra registrado en el sistema ");}
-            catch(Exception ex) {Console.WriteLine(" >> {0}",ex.Message); 
-            }
+            else Console.WriteLine("  >> Error: El vehículo ya se encuentra registrado en el sistema ");
             Console.ReadKey();
             break;
             case 2: 
-            try{
             Console.Clear();
             if(EliminarVehiculo(MiAgencia)) Console.WriteLine(" >> Vehiculo eliminado con exito");
-            else Console.WriteLine(" >> Ocurrió un fallo al intentar eliminar el vehículo del registro");}
-            catch(Exception ex) {Console.WriteLine(" >> {0}",ex.Message); }
+            else Console.WriteLine(" >> Ocurrió un fallo al intentar eliminar el vehículo del registro");
             Console.ReadKey();
             break;
             case 3: 
             Console.Clear();
-            try{
             if(RegistrarCliente(MiAgencia)) Console.WriteLine(" >> Cliente registrado con éxito en el sistema ");
-            else Console.WriteLine(" >> Error: El cliente ya se encuentra registrado en el sistema ");}
-            catch(Exception ex) {Console.WriteLine(" >> {0}",ex.Message);}
+            else Console.WriteLine(" >> Error: El cliente ya se encuentra registrado en el sistema ");
             Console.ReadKey();
             break;
             case 4:
-              Console.Clear();
-              try{
+              Console.Clear();  
             double valor = RegistrarAlquiler(MiAgencia);
-            Console.WriteLine(" >> Monto total a abonar: {0}", valor);}
-            catch(Exception ex){Console.WriteLine(" >> {0}",ex.Message);}
+            Console.WriteLine(" >> Monto total a abonar: {0}", valor);
             Console.ReadKey();
             break;
             case 5:
@@ -92,12 +83,18 @@ namespace Agencia
             break;
             default:
             Console.Clear();
-            Console.WriteLine(" Opcion ingresada invalida. Se le regresara al menu. ");
+            Console.WriteLine(" >> Opcion ingresada invalida. Se le regresara al menù... ");
             Console.ReadKey();
 
             break;
   
           }
+       }
+       catch(Exception ex)
+        {
+          Console.WriteLine("{0}", ex.Message);
+          Console.ReadKey();
+        }
       
   }
 
@@ -119,15 +116,15 @@ namespace Agencia
           if(!int.TryParse(Console.ReadLine(), out opcion))throw new Exception("  Error: tipo de dato invalido");
          if(opcion < 1 || opcion > 3) throw new Exception(" Error: eleccion invalida ");
 
-         Console.WriteLine(" >> Ingrese el marca: ");
+         Console.Write(" >> Ingrese el marca: ");
          string marca = Console.ReadLine();
-         Console.WriteLine(" >> Ingrese modelo");
+         Console.Write(" >> Ingrese modelo:");
          string modelo = Console.ReadLine();
-        Console.WriteLine(" >> Ingrese patente: ");
+        Console.Write(" >> Ingrese patente: ");
         string patente = Console.ReadLine();
-        Console.WriteLine(" >> Ingrese año: ");
+        Console.Write(" >> Ingrese año: ");
         int anio;
-        if(!int.TryParse(Console.ReadLine(), out anio) ) throw new Exception(" Error: Anio invalido");
+        if(!int.TryParse(Console.ReadLine(), out anio) ) throw new Exception(" Error: Año invalido");
         Console.WriteLine(" >>Ingrese precio por dia: ");
         int precio;
         if(!int.TryParse(Console.ReadLine(),out precio) )throw new Exception(" Error: precio invalido");
@@ -139,19 +136,19 @@ namespace Agencia
          case 1: 
          Console.Write(" >> Ingrese cantidad de puerta: "); 
          int puertas = int.Parse(Console.ReadLine());
-         Console.WriteLine(" >> Ingrese si el vehiculo posee caja automatica(true/false): ");
+         Console.Write(" >> Ingrese si el vehiculo posee caja automatica(true/false): ");
          bool cajaAutomatica = bool.Parse(Console.ReadLine());
-           return MiAgencia.AgregarVehiculo(new Auto(patente,marca,modelo,anio,precio, puertas ,cajaAutomatica,true));  
+           return MiAgencia.AgregarVehiculo(new Auto(patente.ToUpper(),marca,modelo,anio,precio, puertas ,cajaAutomatica,true));  
          case 2:
-          Console.WriteLine(" >> Ingrese si el vehiculo es 4x4(true/false):" );
+          Console.Write(" >> Ingrese si el vehiculo es 4x4(true/false):" );
           bool cxc = bool.Parse(Console.ReadLine());
-          Console.WriteLine(" >> Ingrese la capacidad de carga: (sin especificar unidades de medida (kg, g, etc))");
+          Console.Write(" >> Ingrese la capacidad de carga: (sin especificar unidades de medida (kg, g, etc))");
           double carga = double.Parse(Console.ReadLine());
-         return MiAgencia.AgregarVehiculo(new Camioneta(patente,marca,modelo,anio,precio,carga,cxc,true) );
+         return MiAgencia.AgregarVehiculo(new Camioneta(patente.ToUpper(),marca,modelo,anio,precio,carga,cxc,true) );
          case 3:
          Console.Write(" >> Ingrese la cilindrada del vehiculo: ");
          int cilindrada = int.Parse(Console.ReadLine());
-         return MiAgencia.AgregarVehiculo(new Moto(patente,marca,modelo,anio,precio,cilindrada, true));
+         return MiAgencia.AgregarVehiculo(new Moto(patente.ToUpper(),marca,modelo,anio,precio,cilindrada, true));
       }
       return false;
       }
@@ -186,7 +183,7 @@ namespace Agencia
       Console.Write("  >> Ingrese los dias del alquiler: ");
       int  dias;
       if(!int.TryParse(Console.ReadLine(),out dias))throw new Exception(" Error tipo de dato invalido");
-      return MiAgencia.RealizarAlquileres(dni,patente, dias);
+      return MiAgencia.RealizarAlquileres(dni,patente.ToUpper(), dias);
     }
     public static bool EliminarVehiculo(Agencia MiAgencia)
     {
