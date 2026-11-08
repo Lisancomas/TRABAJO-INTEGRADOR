@@ -83,7 +83,7 @@ namespace Agencia
             break;
             default:
             Console.Clear();
-            Console.WriteLine(" >> Opcion ingresada invalida. Se le regresara al menù... ");
+            Console.WriteLine(" >> Opcion ingresada invalida. Se le regresarà al menù... ");
             Console.ReadKey();
 
             break;
@@ -190,7 +190,7 @@ namespace Agencia
        Console.Write(" >> Ingrese la patente del vehiculo: ");
        string patente = Console.ReadLine();
        if(string.IsNullOrWhiteSpace(patente)) throw new Exception(" >> Error: la patente esta vacia");
-      return MiAgencia.EliminarVehiculo(patente);
+      return MiAgencia.EliminarVehiculo(patente.ToUpper());
     }
         
    

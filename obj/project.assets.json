@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO INTEGRADOR.csproj",
+      "projectUniqueName": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO-INTEGRADOR\\TRABAJO INTEGRADOR.csproj",
       "projectName": "TRABAJO INTEGRADOR",
-      "projectPath": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO INTEGRADOR.csproj",
+      "projectPath": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO-INTEGRADOR\\TRABAJO INTEGRADOR.csproj",
       "packagesPath": "C:\\Users\\tito\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\obj\\",
+      "outputPath": "C:\\Users\\tito\\Documents\\proyectos c#\\TRABAJO-INTEGRADOR\\TRABAJO-INTEGRADOR\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tito\\AppData\\Roaming\\NuGet\\NuGet.Config"

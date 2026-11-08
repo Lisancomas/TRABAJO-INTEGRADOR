@@ -23,11 +23,11 @@ namespace Agencia
             alquileres = new List<Alquiler>();
            
         }
-        public bool AgregarVehiculo(Vehiculo c)
+        public bool AgregarVehiculo(Vehiculo v)
         {
-          if(!vehiculos.Exists(a => a.Patente == c.Patente))
+          if(!vehiculos.Exists(a => a.Patente == v.Patente))
           {
-                 vehiculos.Add(c);
+                 vehiculos.Add(v);
                 return true;
 
           }
@@ -115,7 +115,8 @@ namespace Agencia
         {
             
             int cont = 0;
-             Console.WriteLine("  >> Listado de vehiculos con seguro:    ");
+             if(vehiculos.Count > 0)
+        {
              foreach(Vehiculo v in vehiculos)
             {
                
@@ -131,7 +132,11 @@ namespace Agencia
             {
                 Console.WriteLine(" >> No hay vehiculos con seguro registrado en el sistema <<");
             }
-
+       }
+       else
+      {
+             Console.WriteLine(">> no hay vehiculos registrados en el sistema <<");
+      }
 
             
          }//fin del metodo
