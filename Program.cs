@@ -112,42 +112,38 @@ namespace Agencia
         Console.WriteLine(" 2. Camioneta");
         Console.WriteLine(" 3. Moto");
         Console.WriteLine(" >> Ingrese la opcion: ");     
-        int opcion;
-          if(!int.TryParse(Console.ReadLine(), out opcion))throw new Exception("  Error: tipo de dato invalido");
+        int opcion = comprobarNumeroEnter();
          if(opcion < 1 || opcion > 3) throw new Exception(" Error: eleccion invalida ");
 
          Console.Write(" >> Ingrese el marca: ");
-         string marca = Console.ReadLine();
+         string marca = comprobarString();
          Console.Write(" >> Ingrese modelo:");
-         string modelo = Console.ReadLine();
+         string modelo = comprobarString();
         Console.Write(" >> Ingrese patente: ");
-        string patente = Console.ReadLine();
+        string patente = comprobarString();
         Console.Write(" >> Ingrese año: ");
-        int anio;
-        if(!int.TryParse(Console.ReadLine(), out anio) ) throw new Exception(" Error: Año invalido");
-        Console.WriteLine(" >>Ingrese precio por dia: ");
-        int precio;
-        if(!int.TryParse(Console.ReadLine(),out precio) )throw new Exception(" Error: precio invalido");
-         
+        int anio = comprobarNumeroEnter();
+        Console.Write(" >>Ingrese precio por dia: ");
+        int precio = comprobarNumeroEnter();
 
 
         switch(opcion)
       {
          case 1: 
          Console.Write(" >> Ingrese cantidad de puerta: "); 
-         int puertas = int.Parse(Console.ReadLine());
+         int puertas = comprobarNumeroEnter();
          Console.Write(" >> Ingrese si el vehiculo posee caja automatica(true/false): ");
-         bool cajaAutomatica = bool.Parse(Console.ReadLine());
+         bool cajaAutomatica = comprobarBool();
            return MiAgencia.AgregarVehiculo(new Auto(patente.ToUpper(),marca,modelo,anio,precio, puertas ,cajaAutomatica,true));  
          case 2:
           Console.Write(" >> Ingrese si el vehiculo es 4x4(true/false):" );
-          bool cxc = bool.Parse(Console.ReadLine());
+          bool cxc = comprobarBool();
           Console.Write(" >> Ingrese la capacidad de carga: (sin especificar unidades de medida (kg, g, etc))");
-          double carga = double.Parse(Console.ReadLine());
+          double carga = comprobarDouble();
          return MiAgencia.AgregarVehiculo(new Camioneta(patente.ToUpper(),marca,modelo,anio,precio,carga,cxc,true) );
          case 3:
          Console.Write(" >> Ingrese la cilindrada del vehiculo: ");
-         int cilindrada = int.Parse(Console.ReadLine());
+         int cilindrada = comprobarNumeroEnter();
          return MiAgencia.AgregarVehiculo(new Moto(patente.ToUpper(),marca,modelo,anio,precio,cilindrada, true));
       }
       return false;
@@ -155,20 +151,14 @@ namespace Agencia
     public static bool RegistrarCliente(Agencia MiAgencia)
     {
                   Console.Write(" >> Ingrese el nombre del cliente: ");
-                  string nombre = Console.ReadLine();
-                 
-                 
+                  string nombre = comprobarString();          
                   Console.Write(">> Ingrese el dni del cliente:");
-                  int dni;
-                  if(!int.TryParse(Console.ReadLine(), out dni )) throw new Exception(" Error: tipo de dato Invalido");
-                  
-                 
+                  int dni = comprobarNumeroEnter();
                   Console.Write(">> Ingrese el apellido del cliente:");
-                  string apellido = Console.ReadLine();
-                 
+                  string apellido = comprobarString();   
                   Console.Write(">> Ingrese el telefono del cliente:");
-                  int telefono;
-                  if(!int.TryParse(Console.ReadLine(), out telefono)) throw new Exception(" Error: tipo de datos invalido"); 
+                  int telefono = comprobarNumeroEnter();
+                  
 
               return  MiAgencia.AgregarCliente(new Cliente(nombre,apellido,dni,telefono));
                   
@@ -176,20 +166,17 @@ namespace Agencia
     public static double  RegistrarAlquiler(Agencia MiAgencia)
     {
       Console.Write("  >> Ingrese el dni del cliente: ");
-      int dni;
-      if(!int.TryParse(Console.ReadLine(),out dni))throw new Exception(" Error: tipo de dato invalido");
+      int dni = comprobarNumeroEnter();
       Console.Write("  >> Ingrese la patente del vehiculo: ");
-      string patente = Console.ReadLine();
+      string patente = comprobarString();
       Console.Write("  >> Ingrese los dias del alquiler: ");
-      int  dias;
-      if(!int.TryParse(Console.ReadLine(),out dias))throw new Exception(" Error tipo de dato invalido");
+      int  dias = comprobarNumeroEnter();
       return MiAgencia.RealizarAlquileres(dni,patente.ToUpper(), dias);
     }
     public static bool EliminarVehiculo(Agencia MiAgencia)
     {
        Console.Write(" >> Ingrese la patente del vehiculo: ");
-       string patente = Console.ReadLine();
-       if(string.IsNullOrWhiteSpace(patente)) throw new Exception(" >> Error: la patente esta vacia");
+       string patente = comprobarString();
       return MiAgencia.EliminarVehiculo(patente.ToUpper());
     }
         
@@ -210,6 +197,36 @@ namespace Agencia
     
 
     } 
+    public  static int comprobarNumeroEnter()
+    {
+         int n;
+         if(int.TryParse(Console.ReadLine(), out n) && n > 0) return n;
+         else throw new Exception(" >> Error: nùmero invalido");          
+
+    }
+    public static string comprobarString()
+    {
+      string texto = Console.ReadLine();
+      if(!string.IsNullOrWhiteSpace(texto)) return texto;
+      else throw new Exception(" >> Error: el texto no puede estar vacio");
+
+
+    }
+    public static bool comprobarBool()
+    {
+      bool trueFalse;
+      if( bool.TryParse(Console.ReadLine(),out trueFalse)) return trueFalse;
+      else throw new Exception("  >> Error: debe ungresar true o false");
+
+    }
+    public static double comprobarDouble()
+    {
+      
+       double n;
+         if(double.TryParse(Console.ReadLine(), out n) && n > 0) return n;
+         else throw new Exception(" >> Error: nùmero invalido");      
+
+    }
 }
 }
      
