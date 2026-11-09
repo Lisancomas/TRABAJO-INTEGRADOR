@@ -216,7 +216,7 @@ namespace Agencia
     {
       bool trueFalse;
       if( bool.TryParse(Console.ReadLine(),out trueFalse)) return trueFalse;
-      else throw new Exception("  >> Error: debe ungresar true o false");
+      else throw new Exception("  >> Error: debe ingresar true o false");
 
     }
     public static double comprobarDouble()
