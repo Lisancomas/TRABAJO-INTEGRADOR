@@ -9,7 +9,7 @@ namespace Agencia
 {
     public class Agencia
     {
-        public string Nombre { get; set; } 
+        private string Nombre { get; set; } 
         private List<Vehiculo> vehiculos;
         private List<Cliente> clientes;
         private List<Alquiler> alquileres;
